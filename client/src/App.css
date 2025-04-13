@@ -1,0 +1,60 @@
+/* client/src/App.css */
+.App {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.App-header h1 {
+  margin: 0;
+}
+
+.App-header code {
+  background-color: #444;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+main {
+  padding: 10px;
+}
+
+.posts-list {
+  display: grid;
+  gap: 20px;
+}
+
+.post-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post-item h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.post-item p {
+  color: #555;
+}
+
+p[style*="color: red"] {
+  background-color: #ffebee;
+  border: 1px solid #e57373;
+  padding: 10px;
+  border-radius: 4px;
+}

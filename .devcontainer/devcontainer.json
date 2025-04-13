@@ -1,0 +1,27 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "React Express Blog",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18", // Or a newer Node version
+
+  "forwardPorts": [
+    3000, // Frontend (React/Vite)
+    5000  // Backend (Express)
+  ],
+
+  // Run after the container is created (first time or rebuild)
+  "postCreateCommand": "npm run install:all",
+
+  // Run every time the Codespace starts or reconnects
+  // This script automatically creates/updates .env files
+  "postStartCommand": "bash scripts/set-env.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+  // Note: .env files should still be added to .gitignore
+}

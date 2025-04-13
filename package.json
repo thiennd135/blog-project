@@ -1,0 +1,27 @@
+{
+  "name": "react-express-codespaces-blog",
+  "version": "1.0.0",
+  "description": "Simple Blog with React Frontend and Express Backend for GitHub Codespaces",
+  "private": true,
+  "scripts": {
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
+    "install:all": "npm run install:server && npm run install:client && npm install",
+    "dev:client": "npm run dev --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "setup:env": "bash scripts/set-env.sh"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "codespaces",
+    "concurrently",
+    "cors"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
